@@ -1,20 +1,21 @@
-<div class="logo">
-    <a routerLink="/"><img class="logo-img" src="assets/img/logoTceWhite.png" /></a>
-  </div>
-  <div class="site-name">
-    Ordem de Serviço
-  </div>
-  <div class="navigation" *ngIf="!layout.isMobileSize && layout.itensDeMenu?.length > 0">
-    <div #itensMenu item-menu class="item-menu" [itemMenu]="item" [nivel]="1" *ngFor="let item of layout.itensDeMenu"></div>
-  </div>
-  <div class="action-bars d-flex align-items-center ml-auto">
-    <app-animated-search class="d-flex"></app-animated-search>
+<header>
+    <div class="container-fluid">
+      <div class="stack">
+        <div class="stack-item" style="width: 84px;">
+          <div class="d-flex flex-row align-items-center">
+            <div class="menu-toggler mr-4 d-flex align-items-center">
+              <i class="icon-menu icons" style="font-size: 24px;" (click)="ToggleSideBar()"></i>
+            </div>
+          </div>
+        </div>
+        <div class="stack-item float-left">
+          <a class="logo" routerLink="/">
+            <div class="d-flex flex-row align-items-center">
+              <img class="logo-img" src="assets/img/logo.png" />
+            </div>
+          </a>        
+        </div>
+      </div>
+    </div>
+  </header>
   
-    <header-action-button caption="Notificações" dropdownTitle="Minhas notificações" icon="icons icon-bell">
-      <ng-template dropdown-template>
-        <small>Nenhuma notificação encontrada no momento.</small>
-      </ng-template>
-    </header-action-button>
-  
-    <header-action-button caption="Configurações" icon="icons icon-settings" routerLink="/settings"></header-action-button>
-  </div>

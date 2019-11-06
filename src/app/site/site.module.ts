@@ -5,11 +5,12 @@ import { SiteRoutingModule } from './site.routing.module';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { TimepickerModule } from 'ngx-bootstrap';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     declarations: [
 
-    ],
+    HomeComponent],
     imports: [
         CommonModule,
         NgxUiHeroModule,

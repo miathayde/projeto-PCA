@@ -1,28 +1,115 @@
-.menu-toggler {
+header {
+    height: 100%;
+    color: #FFF;
+    background-color: rgb(13, 80, 153);
+    border-bottom: 3px solid #002e5f;
+    height: 70px;
+    transition: all .3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+
+    > .container-fluid {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 20px;
+
+        .stack-item {
+            vertical-align: middle;
+
+            .menu-toggler,
+            ul.navbar-nav li {
+                > i.icons {
+                    font-size: 24px;
+                    padding: 10px;
+                    margin-left: -10px;
+                    border-radius: 100%;
+                }
+            }
+
+            .logo {
+                text-decoration: none;
+
+                .logo-img {
+                    height: 35px;
+                    width: auto;
+                }
+    
+                .sitename {
+                    color: #98c0ea;
+                    font-size: 30px;
+                    font-weight: bold;
+                    margin-left: 10px;
+                    text-shadow: -1px 1px 0px #002e5f;
+                }
+            }
+        }
+    }
+}
+
+.page-title {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #FFF;
-    background-color: #002e5f;
-    border-radius: 3px;
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-}
-.logo {
-    a {
-        outline: none;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    .actions {
+        flex-shrink: 0;
     }
-    img {
-        width: auto;
-        height: 35px;
-    }        
+
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
-.site-name {
-    color: #98c0ea;
-    font-size: 30px;
-    font-weight: 700;
-    margin-left: 10px;
-    text-shadow: -1px 1px 0 #002e5f;
+
+
+header {
+    .stack {
+        .stack-item {
+            .logo {
+                .d-flex {
+                    justify-content: start !important;
+                }
+            }
+        }
+        .stack-item:first-child {
+            width: 84px;
+
+            .menu-toggler {
+                margin-right: 0 !important;
+            }
+            .navbar {
+                display: none;
+            }
+        }
+    }
+}
+
+.caminho {
+    margin-top: 65px;
+}
+
+
+@media (max-width: 768px) {
+
+    .caminho {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .sitename {
+        font-size: 18px !important;
+    }
 }
