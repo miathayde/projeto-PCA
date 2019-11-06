@@ -1,0 +1,20 @@
+<div class="logo">
+    <a routerLink="/"><img class="logo-img" src="assets/img/logoTceWhite.png" /></a>
+  </div>
+  <div class="site-name">
+    Ordem de Serviço
+  </div>
+  <div class="navigation" *ngIf="!layout.isMobileSize && layout.itensDeMenu?.length > 0">
+    <div #itensMenu item-menu class="item-menu" [itemMenu]="item" [nivel]="1" *ngFor="let item of layout.itensDeMenu"></div>
+  </div>
+  <div class="action-bars d-flex align-items-center ml-auto">
+    <app-animated-search class="d-flex"></app-animated-search>
+  
+    <header-action-button caption="Notificações" dropdownTitle="Minhas notificações" icon="icons icon-bell">
+      <ng-template dropdown-template>
+        <small>Nenhuma notificação encontrada no momento.</small>
+      </ng-template>
+    </header-action-button>
+  
+    <header-action-button caption="Configurações" icon="icons icon-settings" routerLink="/settings"></header-action-button>
+  </div>

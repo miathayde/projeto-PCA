@@ -1,0 +1,28 @@
+.menu-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    background-color: #002e5f;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.logo {
+    a {
+        outline: none;
+    }
+    img {
+        width: auto;
+        height: 35px;
+    }        
+}
+.site-name {
+    color: #98c0ea;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-shadow: -1px 1px 0 #002e5f;
+}

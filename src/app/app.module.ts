@@ -5,10 +5,15 @@ import { NgxUiHeroModule } from 'ngx-ui-hero';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
+import { SiteModule } from './site/site.module';
+import { BsModalRef } from 'ngx-bootstrap';
+import { HeaderComponent } from './layout/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -16,10 +21,12 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     NgxUiHeroModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    SiteModule
   ],
   providers: [
-    
+    BsModalRef
   ],
   bootstrap: [AppComponent]
 })
