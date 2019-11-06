@@ -2,7 +2,6 @@ header {
     height: 100%;
     color: #FFF;
     background-color: rgb(13, 80, 153);
-    border-bottom: 3px solid #002e5f;
     height: 70px;
     transition: all .3s ease;
     position: fixed;
@@ -38,8 +37,9 @@ header {
                 text-decoration: none;
 
                 .logo-img {
-                    height: 35px;
+                    height: 45px;
                     width: auto;
+                    margin-top: -10px;
                 }
     
                 .sitename {

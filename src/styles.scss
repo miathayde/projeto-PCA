@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.portlet {
+    box-shadow: 0 1px 15px 1px rgba(69, 65, 78, .08);
+    background-color: rgb(160, 204, 255);
+    padding: 20px;
+    margin-bottom: 2.2rem;
+
+    .portlet-title {
+        margin: -20px -20px 20px -20px;
+        padding: 15px 20px 13px 20px;
+        border-top: 3px solid #2c2e3e;
+        color: #5f5f5f;
+        line-height: 1;
+        font-weight: 600;
+        border-bottom: 1px solid #f2f3f8;
+    }
+}
+
+.fundo-home {
+    box-shadow: 0 1px 15px 1px rgba(69, 65, 78, .08);
+    background-color: rgb(160, 204, 255);
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
