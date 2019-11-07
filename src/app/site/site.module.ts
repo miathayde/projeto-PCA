@@ -17,7 +17,7 @@ import { HomeComponent } from './home/home.component';
         SiteRoutingModule,
         FormsModule,
         SharedModule,
-        TimepickerModule
+        TimepickerModule,
     ],
     entryComponents: [
         

@@ -1,15 +1,90 @@
-.fundo-home {
-    margin-top: 50px;
+.primeira-parte {
+
+    .fundo-home {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(61, 61, 61);
+            margin-bottom: -15px;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(58, 110, 158);
+            margin-bottom: -15px;
+        }
+    }
+
+    .tecnologia-img {
+        margin-top: 50px;
+        width: auto;
+        height: 320px;
+        margin-right: 120px;
+    }
 }
 
-.tecnologia-img {
-    margin-top: 50px;
-    width: auto;
-    height: 300px;
-    margin-left: 30px;
+.segunda-parte {
+
+    .fundo-home2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        
+        .time-img {
+            width: auto;
+            height: 220px;
+        }
+
+        .texto {
+            margin-right: 60px;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(255, 255, 255);
+            margin-bottom: -15px;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(168, 214, 253);
+            margin-bottom: -15px;
+        }
+    }
+    
 }
 
-.logo-img {
-    width: auto;
-    height: 300px;
-} 
+.terceira-parte {
+    .fundo-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+
+        .texto {
+            margin-left: 60px;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(61, 61, 61);
+            margin-bottom: -15px;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(58, 110, 158);
+            margin-bottom: -15px;
+        }
+
+        .city-img {
+            width: auto;
+            height: 250px;
+        }
+    }
+}
