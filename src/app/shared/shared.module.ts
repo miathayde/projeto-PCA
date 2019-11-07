@@ -3,6 +3,7 @@ import { NgxUiHeroModule, NgxUiHeroDataGridModule, NgxUiHeroInputFormsModule, Ng
 import { FormsModule } from '@angular/forms';
 import { ModalModule, TabsModule } from 'ngx-bootstrap';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { NgModule } from '@angular/core';
       ModalModule.forRoot(),
       TabsModule.forRoot(),
       FormsModule,
+      BrowserModule
     ],
     declarations: [],
     providers: [],
