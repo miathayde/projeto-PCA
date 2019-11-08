@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ModalModule, TabsModule } from 'ngx-bootstrap';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { EadPresenciaisComponent } from './componentes/ead-presenciais/ead-presenciais.component';
 
 
 @NgModule({
@@ -18,14 +19,17 @@ import { BrowserModule } from '@angular/platform-browser';
       FormsModule,
       BrowserModule
     ],
-    declarations: [],
+    declarations: [
+      EadPresenciaisComponent
+    ],
     providers: [],
     exports: [
         NgxUiHeroModule,
         NgxUiHeroDataGridModule,
         NgxUiHeroInputFormsModule,
         NgxUiHeroChartsModule,
-        TabsModule
+        TabsModule,
+        EadPresenciaisComponent
     ]
 })
 
