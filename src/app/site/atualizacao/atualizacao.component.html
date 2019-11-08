@@ -1,1 +1,32 @@
-<p>atualizacao works!</p>
+<h2 class="ml-3">Cursos à distância</h2>
+
+<div class="row botoes-pesquisa ml-3 mt-5">
+    <h5>Pesquisar por:</h5>
+    <div class="btns">
+        <button type="button" class="btn btn-outline-primary ml-3">Educação e humanas</button>
+        <button type="button" class="btn btn-outline-primary ml-3">Saúde</button>
+        <button type="button" class="btn btn-outline-primary ml-3">Tecnologia</button>
+        <button type="button" class="btn btn-outline-primary ml-3">Sociais e aplicadas</button>
+    </div>
+</div>
+<div class="card d-flex mr-5 ml-5 mt-5 mb-3">
+        <div class="galeria">
+            <div class="figura img-fluid">
+                <img [src]="cursosAtualizacao.imagem" class="card-img-top" alt="Card image cap">
+            </div>
+            <div class="card-body col-lg-12">
+                <h2 class="titulo">{{meuCurso.titulo}}</h2>
+                <hr class="my-4">
+                <h6>
+                    <p class="card-text"><b>Horário: </b>{{meuCurso.horario}}</p>
+                    <p class="card-text"><b>Periodicidade: </b>{{meuCurso.periodicidade}}</p>
+                    <p class="card-text"><b>Carga horária: </b>{{meuCurso.cargaHoraria}}</p>
+                    <p class="card-text"><b>Unidade: </b>{{meuCurso.unidade}}</p>
+                </h6>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <button class="btn btn-primary btn-sm" (click)="ExibirInfoCurso(curso)">Apresentação do Curso</button>
+                <button class="btn btn-primary btn-sm" (click)="ExibirInscricao(curso)">Pré-inscrição</button>
+            </div>
+        </div>
+    </div>

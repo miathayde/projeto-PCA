@@ -1,4 +1,4 @@
-export class CursosAtualizacao {
+export class atualizacaoCursos {
     data: Array <any> = [
         {
             "titulo": "Espanhol básico I",
