@@ -8,6 +8,7 @@ import { TimepickerModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { PresenciaisComponent } from './presenciais/presenciais.component';
 import { EadComponent } from './ead/ead.component';
+import { AtualizacaoComponent } from './atualizacao/atualizacao.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,9 @@ import { EadComponent } from './ead/ead.component';
 
     PresenciaisComponent,
 
-    EadComponent],
+    EadComponent,
+
+    AtualizacaoComponent],
     imports: [
         CommonModule,
         NgxUiHeroModule,
