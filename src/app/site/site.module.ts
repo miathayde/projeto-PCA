@@ -6,11 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { TimepickerModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
+import { PresenciaisComponent } from './presenciais/presenciais.component';
+import { EadComponent } from './ead/ead.component';
 
 @NgModule({
     declarations: [
 
-    HomeComponent],
+    HomeComponent,
+
+    PresenciaisComponent,
+
+    EadComponent],
     imports: [
         CommonModule,
         NgxUiHeroModule,

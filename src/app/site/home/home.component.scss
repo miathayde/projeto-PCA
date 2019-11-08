@@ -82,3 +82,16 @@
         }
     }
 }
+
+.quarta-parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(29, 94, 131);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: rgb(156, 156, 156) 0.1em 0.1em 0.2em;
+
+    .botoes {
+        justify-content: space-around;
+    }
+}
