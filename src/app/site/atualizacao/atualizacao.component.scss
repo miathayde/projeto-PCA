@@ -7,3 +7,22 @@ h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(13, 53, 114);
 }
+
+.galeria {
+    flex-wrap: wrap;
+
+
+    .card {
+        width: 500px;
+        height: auto;
+
+        .card-img-top {
+            height: 300px;
+        }
+
+        .card-body {
+        color: rgb(66, 71, 78);
+        }
+
+    }
+}

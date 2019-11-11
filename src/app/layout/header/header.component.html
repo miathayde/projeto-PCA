@@ -1,6 +1,7 @@
 <header>
     <div class="container-fluid">
       <div class="stack">
+
         <div class="stack-item" style="width: 84px;">
           <div class="d-flex flex-row align-items-center">
             <div class="menu-toggler mr-4 d-flex align-items-center">
@@ -8,12 +9,20 @@
             </div>
           </div>
         </div>
+
         <div class="stack-item float-left">
           <a class="logo" routerLink="/">
             <div class="d-flex flex-row align-items-center">
-              <img class="logo-img" src="assets/img/logo.png" />
+              <img class="logo2-img" src="assets/img/logo2.png" />
             </div>
           </a>        
+        </div>
+
+        <div class="menu d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-light mr-3">Sobre a Pós Unigranrio</button>
+            <button type="button" class="btn btn-outline-light mr-3" [routerLink]="['/cursos-pos-presenciais']">Pós-graduação presencial</button>
+            <button type="button" class="btn btn-outline-light mr-3" [routerLink]="['/cursos-pos-EAD']">Pós-graduação à distância</button>
+            <button type="button" class="btn btn-outline-light" [routerLink]="['/cursos-atualizacao']">Cursos de atualização</button>
         </div>
       </div>
     </div>
