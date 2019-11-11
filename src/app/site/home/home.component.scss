@@ -21,7 +21,6 @@
         margin-top: 50px;
         width: auto;
         height: 320px;
-        margin-right: 120px;
     }
 }
 
@@ -36,10 +35,6 @@
         .time-img {
             width: auto;
             height: 220px;
-        }
-
-        .texto {
-            margin-right: 60px;
         }
 
         h1 {
@@ -93,5 +88,85 @@
 
     .botoes {
         justify-content: space-around;
+
+        .b1 {
+            margin-right: 20px;
+        }
+        .b2 {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 1197px) {
+
+    .primeira-parte {
+         
+        .fundo-home {
+            flex-direction: column;
+
+            .tecnologia-img {
+                margin-bottom: 10px;
+                margin-top: 30px;
+            }
+
+            .texto {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .segunda-parte {
+
+        .fundo-home2 {
+            flex-direction: column;
+        }
+
+        .texto {
+            margin-top: 30px;
+        }
+        
+        .time-img {
+            margin-top: 20px;
+        }
+    }
+
+    .terceira-parte {
+
+        .fundo-home {
+
+            .city-img {
+                margin-top: 30px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 973px) {
+
+    .quarta-parte {
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+
+            .b1 {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+            .b2 {
+                margin-right: 0;
+            }
+            .b3 {
+                margin-top: 20px;
+            }
+        }
     }
 }
