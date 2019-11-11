@@ -10,6 +10,7 @@ import { PresenciaisComponent } from './presenciais/presenciais.component';
 import { EadComponent } from './ead/ead.component';
 import { AtualizacaoComponent } from './atualizacao/atualizacao.component';
 import { AtualizacaoModalComponent } from './atualizacao/atualizacao-modal/atualizacao-modal.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,9 @@ import { AtualizacaoModalComponent } from './atualizacao/atualizacao-modal/atual
 
     AtualizacaoComponent,
 
-    AtualizacaoModalComponent],
+    AtualizacaoModalComponent,
+
+    SobreComponent],
     imports: [
         CommonModule,
         NgxUiHeroModule,

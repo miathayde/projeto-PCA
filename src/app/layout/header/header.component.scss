@@ -99,6 +99,14 @@ header {
     margin-top: 65px;
 }
 
+@media (max-width: 1130px) {
+    .menu {
+        .btn {
+            display: none;
+        }
+    }
+}
+
 
 @media (max-width: 768px) {
 
