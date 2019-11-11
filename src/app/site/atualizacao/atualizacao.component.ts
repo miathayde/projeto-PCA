@@ -22,6 +22,7 @@ export class AtualizacaoComponent implements OnInit {
 
     ExibirInfoCurso(info: any): void {
       this.modalService.show(AtualizacaoModalComponent, {
+        class: 'modal-lg',
         initialState: {
           tituloModal: "Informações sobre o curso"
         }
