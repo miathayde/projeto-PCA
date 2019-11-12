@@ -2,8 +2,6 @@ export class cursosEadModel {
     nomeCurso: string;
     duracao: string;
     modalidade: string;
-    diasAula: string;
-    horario: string;
     frequencia: string;
     cargaHoraria: string;
     titulo: string;
@@ -11,5 +9,8 @@ export class cursosEadModel {
     publicoAlvo: string;
     competencias: string;
     diferencial: string;
+    metodologia: string;
+    avaliacao: string;
+    organizacao: string;
     preRequisito: string;
 }

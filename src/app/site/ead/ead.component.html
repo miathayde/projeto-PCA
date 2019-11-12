@@ -1,3 +1,24 @@
-<h2 class="ml-3">Cursos à distância</h2>
+<h1 class="display-4 ml-5">Cursos à Distância – EaD</h1>
 
 <app-ead-presenciais></app-ead-presenciais>
+
+<div class="galeria d-flex mt-5 justify-content-center">
+    <div class="card mr-5 ml-5 mb-5" *ngFor="let cursosEad of eadCursos">
+        <img class="card-img-top" [src]="cursosEad.imagem" alt="...">
+        <div class="card-body">
+            <h4 class="card-title">{{cursosEad.nomeCurso}}</h4>
+            <hr>
+            <p class="card-text"><b>Duração do curso: </b>{{cursosEad.duracao}}</p>
+            <p class="card-text"><b>Modalidade: </b>{{cursosEad.modalidade}}</p>
+            <p class="card-text"><b>Frequência: </b>{{cursosEad.frequencia}}</p>
+            <p class="card-text"><b>Carga horária: </b>{{cursosEad.cargaHoraria}}</p>
+            <p class="card-text"><b>Título: </b>{{cursosEad.titulo}}</p>
+            
+            <hr>
+            <div class="botoes d-flex justify-content-between">
+                <button type="button" class="btn btn-primary" (click)="ExibirInfoCurso(info)">Sobre o curso</button>
+                <button type="button" class="btn btn-primary">Pré-inscrição</button>
+            </div>
+        </div>
+    </div>
+</div>
