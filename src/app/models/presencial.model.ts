@@ -1,7 +1,10 @@
 export class cursosPresencialModel {
     nomeCurso: string;
     duracao: string;
+    unidade: string;
     modalidade: string;
+    diasAula: string;
+    horario: string;
     frequencia: string;
     cargaHoraria: string;
     titulo: string;
@@ -10,7 +13,4 @@ export class cursosPresencialModel {
     competencias: string;
     diferencial: string;
     preRequisito: string;
-    metodologia: string;
-    avaliacao: string;
-    organizacao: string;
 }
