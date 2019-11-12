@@ -1,5 +1,7 @@
-export class atualizacaoCursos {
-    data: Array <any> = [
+import { AtualizacaoModels } from './models/atualizacao.model';
+
+// export class atualizacaoCursos {
+    export const AtualizacaoCursosMock: Array <AtualizacaoModels> = [
         {
             "titulo": "Espanhol básico I",
             "horario": "9h às 12h",
@@ -969,4 +971,4 @@ export class atualizacaoCursos {
             "imagem": "http://www.unigranrio.com.br/cursos-de-atualizacao/wp-content/uploads/2019/03/sh.jpg"
         }
     ];
-}
+// }

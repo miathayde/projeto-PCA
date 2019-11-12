@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { atualizacaoCursos } from 'src/app/cursos-atualizacao';
+import { AtualizacaoCursosMock } from 'src/app/cursos-atualizacao';
 import { BsModalService } from 'ngx-bootstrap';
 import { AtualizacaoModalComponent } from './atualizacao-modal/atualizacao-modal.component';
+import { AtualizacaoModels } from 'src/app/models/atualizacao.model';
 
 @Component({
   selector: 'app-atualizacao',
@@ -10,8 +11,9 @@ import { AtualizacaoModalComponent } from './atualizacao-modal/atualizacao-modal
 })
 export class AtualizacaoComponent implements OnInit {
   info: any = null;
+  // informacoesCursos: atualizacaoCursos = new atualizacaoCursos();
 
-  atualizacaoCursos: Array <any> = new atualizacaoCursos().data;
+  atualizacaoCursos: Array <AtualizacaoModels> = AtualizacaoCursosMock;
 
   constructor(
     private modalService: BsModalService
@@ -21,10 +23,12 @@ export class AtualizacaoComponent implements OnInit {
   }
 
     ExibirInfoCurso(info: any): void {
+      const data = info
       this.modalService.show(AtualizacaoModalComponent, {
         class: 'modal-lg',
         initialState: {
-          tituloModal: "Informações sobre o curso"
+          tituloModal: "Informações sobre o curso",
+          data
         }
       });
   }
