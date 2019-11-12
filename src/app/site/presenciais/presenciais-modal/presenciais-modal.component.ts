@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap';
-import { cursosPresencial } from 'src/app/cursos-presencial';
 
 @Component({
   selector: 'app-presenciais-modal',

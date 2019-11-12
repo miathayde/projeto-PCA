@@ -13,4 +13,5 @@ export class cursosPresencialModel {
     competencias: string;
     diferencial: string;
     preRequisito: string;
+    area: string;
 }

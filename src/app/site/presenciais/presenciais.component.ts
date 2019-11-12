@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { cursosPresencial } from 'src/app/cursos-presencial';
 import { BsModalService } from 'ngx-bootstrap';
 import { PresenciaisModalComponent } from './presenciais-modal/presenciais-modal.component';
 
@@ -9,7 +8,6 @@ import { PresenciaisModalComponent } from './presenciais-modal/presenciais-modal
   styleUrls: ['./presenciais.component.scss']
 })
 export class PresenciaisComponent implements OnInit {
-  presenciaisCursos: Array <any> = new cursosPresencial().data;
   info: any = null;
 
   constructor(
