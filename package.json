@@ -33,7 +33,7 @@
     "ngx-bootstrap": "^5.2.0",
     "ngx-popper": "^7.0.0",
     "ngx-tabset": "^2.1.0",
-    "ngx-ui-hero": "^8.0.17",
+    "ngx-ui-hero": "^8.0.47",
     "oidc-client": "^1.4.1",
     "popper.js": "^1.14.3",
     "print-this": "^1.15.1",
