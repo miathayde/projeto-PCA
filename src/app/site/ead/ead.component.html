@@ -3,9 +3,20 @@
 <div class="row botoes-pesquisa ml-5 mt-5">
     <h5>Pesquisar por:</h5>
     <div class="btns">
-        <button type="button" (click)="trocarFiltro('gestao')" class="btn btn-outline-primary ml-3">Gestão</button>
-        <button type="button" (click)="trocarFiltro('mba')" class="btn btn-outline-primary ml-3">MBA</button>
-        <button type="button" (click)="removerFiltro()" class="btn btn-outline-secondary ml-3">Remover Filtro</button>
+        <button type="button" (click)="trocarFiltro('gestao')" 
+            class="btn ml-3"
+            [ngClass]="filtros['gestao'] ? 'btn-primary' : 'btn-outline-primary'">
+            Gestão
+        </button>
+        <button type="button" (click)="trocarFiltro('mba')" 
+            class="btn btn-outline-primary ml-3"
+            [ngClass]="filtros['mba'] ? 'btn-primary' : 'btn-outline-primary'">
+            MBA
+        </button>
+        <button type="button" (click)="removerFiltro()" 
+            class="btn btn-outline-secondary ml-3">
+            Remover Filtro
+        </button>
     </div>
 </div>
 

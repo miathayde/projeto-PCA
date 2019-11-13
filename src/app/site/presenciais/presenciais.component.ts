@@ -61,22 +61,8 @@ clonarArray() {
 
 filtrarPorArea() {
   this.presencialCursosExibidas = this.cursosPresencial.filter(v =>{
-    if (this.filtros["direito"] && v.area === 'direito') {
-      return true;
-    }
-    if (this.filtros["saude"] && v.area === 'saude') {
-      return true;
-    }
-    if (this.filtros["moda"] && v.area === 'moda') {
-      return true;
-    }
-    if (this.filtros["educacao"] && v.area === 'educacao') {
-      return true;
-    }
-    if (this.filtros["gestao"] && v.area === 'gestao') {
-      return true;
-    }
-    return false;
+    const area = v.area;
+    return this.filtros[area];
   });
 }
 

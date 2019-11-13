@@ -3,12 +3,40 @@
 <div class="row botoes-pesquisa ml-5 mt-5">
     <h5>Pesquisar por:</h5>
     <div class="btns">
-        <button type="button" (click)="trocarFiltro('gestao')" class="btn btn-outline-primary ml-3">Gestão</button>
-        <button type="button" (click)="trocarFiltro('direito')" class="btn btn-outline-primary ml-3">Direito</button>
-        <button type="button" (click)="trocarFiltro('educacao')" class="btn btn-outline-primary ml-3">Educação</button>
-        <button type="button" (click)="trocarFiltro('moda')" class="btn btn-outline-primary ml-3">Moda</button>
-        <button type="button" (click)="trocarFiltro('saude')" class="btn btn-outline-primary ml-3">Saúde</button>
-        <button type="button" (click)="removerFiltro()" class="btn btn-outline-secondary ml-3">Remover Filtro</button>
+        <button type="button" (click)="trocarFiltro('gestao')" 
+            class="btn ml-3"
+            [ngClass]="filtros['gestao'] ? 'btn-primary' : 'btn-outline-primary'"
+            >
+            Gestão
+        </button>
+        <button type="button" (click)="trocarFiltro('direito')" 
+            class="btn ml-3"
+            [ngClass]="filtros['direito'] ? 'btn-primary' : 'btn-outline-primary'"
+            >
+            Direito
+        </button>
+        <button type="button" (click)="trocarFiltro('educacao')" 
+            class="btn ml-3"
+            [ngClass]="filtros['educacao'] ? 'btn-primary' : 'btn-outline-primary'"
+            >
+            Educação
+        </button>
+        <button type="button" (click)="trocarFiltro('moda')" 
+            class="btn ml-3"
+            [ngClass]="filtros['moda'] ? 'btn-primary' : 'btn-outline-primary'"
+            >
+            Moda
+        </button>
+        <button type="button" (click)="trocarFiltro('saude')" 
+            class="btn ml-3"
+            [ngClass]="filtros['saude'] ? 'btn-primary' : 'btn-outline-primary'"
+            >
+            Saúde
+        </button>
+        <button type="button" (click)="removerFiltro()" 
+            class="btn btn-outline-secondary ml-3">Remover 
+            Filtro
+        </button>
     </div>
 </div>
 

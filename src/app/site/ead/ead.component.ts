@@ -55,13 +55,8 @@ clonarArray() {
 
 filtrarPorArea() {
   this.eadCursosExibidas = this.eadCursos.filter(v =>{
-    if (this.filtros["gestao"] && v.area === 'gestao') {
-      return true;
-    }
-    if (this.filtros["mba"] && v.area === 'mba') {
-      return true;
-    }
-    return false;
+    const area = v.area;
+    return this.filtros[area];
   });
 }
 
