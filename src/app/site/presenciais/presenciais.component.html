@@ -1,9 +1,19 @@
 <h1 class="display-4 ml-5">Pós-Graduação Presencial</h1>
 
-<app-ead-presenciais></app-ead-presenciais>
+<div class="row botoes-pesquisa ml-5 mt-5">
+    <h5>Pesquisar por:</h5>
+    <div class="btns">
+        <button type="button" (click)="trocarFiltro('gestao')" class="btn btn-outline-primary ml-3">Gestão</button>
+        <button type="button" (click)="trocarFiltro('direito')" class="btn btn-outline-primary ml-3">Direito</button>
+        <button type="button" (click)="trocarFiltro('educacao')" class="btn btn-outline-primary ml-3">Educação</button>
+        <button type="button" (click)="trocarFiltro('moda')" class="btn btn-outline-primary ml-3">Moda</button>
+        <button type="button" (click)="trocarFiltro('saude')" class="btn btn-outline-primary ml-3">Saúde</button>
+        <button type="button" (click)="removerFiltro()" class="btn btn-outline-secondary ml-3">Remover Filtro</button>
+    </div>
+</div>
 
 <div class="galeria d-flex mt-5 justify-content-center">
-    <div class="card mr-5 ml-5 mb-5" *ngFor="let cursosPresencial of presenciaisCursos">
+    <div class="card mr-5 ml-5 mb-5" *ngFor="let cursosPresencial of presencialCursosExibidas; let i = index">
         <img class="card-img-top" [src]="cursosPresencial.imagem" alt="...">
         <div class="card-body">
             <h4 class="card-title">{{cursosPresencial.nomeCurso}}</h4>

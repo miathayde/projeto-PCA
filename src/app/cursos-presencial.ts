@@ -1,7 +1,7 @@
 import { cursosPresencialModel } from './models/presencial.model';
 
 // export class cursosPresencial {
-    export const PresenciaisCursosMock: Array <cursosPresencialModel> = [
+    export const PresencialCursosMock: Array <cursosPresencialModel> = [
  
         {
             "nomeCurso": "Aperfeiçoamento em Cosmetologia Estética",

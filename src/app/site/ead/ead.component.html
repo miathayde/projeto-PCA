@@ -1,6 +1,16 @@
 <h1 class="display-4 ml-5">Pós-Graduação à Distância – EaD</h1>
 
-<app-ead-presenciais></app-ead-presenciais>
+<div class="row botoes-pesquisa ml-5 mt-5">
+    <h5>Pesquisar por:</h5>
+    <div class="btns">
+        <button type="button" class="btn btn-outline-primary ml-3">Gestão</button>
+        <button type="button" class="btn btn-outline-primary ml-3">Direito</button>
+        <button type="button" class="btn btn-outline-primary ml-3">Educação</button>
+        <button type="button" class="btn btn-outline-primary ml-3">Moda</button>
+        <button type="button" class="btn btn-outline-primary ml-3">Saúde</button>
+        <button type="button" class="btn btn-outline-secondary ml-3">Remover Filtro</button>
+    </div>
+</div>
 
 <div class="galeria d-flex mt-5 justify-content-center">
     <div class="card mr-5 ml-5 mb-5" *ngFor="let cursosEad of eadCursos">
