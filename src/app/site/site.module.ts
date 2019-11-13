@@ -13,7 +13,6 @@ import { AtualizacaoModalComponent } from './atualizacao/atualizacao-modal/atual
 import { SobreComponent } from './sobre/sobre.component';
 import { EadModalComponent } from './ead/ead-modal/ead-modal.component';
 import { PresenciaisModalComponent } from './presenciais/presenciais-modal/presenciais-modal.component';
-import { PreInscricaoModalComponent } from './pre-inscricao-modal/pre-inscricao-modal.component';
 
 @NgModule({
     declarations: [
@@ -32,9 +31,7 @@ import { PreInscricaoModalComponent } from './pre-inscricao-modal/pre-inscricao-
 
     EadModalComponent,
 
-    PresenciaisModalComponent,
-
-    PreInscricaoModalComponent],
+    PresenciaisModalComponent],
     imports: [
         CommonModule,
         NgxUiHeroModule,
@@ -47,8 +44,7 @@ import { PreInscricaoModalComponent } from './pre-inscricao-modal/pre-inscricao-
     entryComponents: [
         AtualizacaoModalComponent,
         EadModalComponent,
-        PresenciaisModalComponent,
-        PreInscricaoModalComponent
+        PresenciaisModalComponent
     ]
 })
 

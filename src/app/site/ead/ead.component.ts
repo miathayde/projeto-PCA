@@ -3,7 +3,6 @@ import { BsModalService } from 'ngx-bootstrap';
 import { EadModalComponent } from './ead-modal/ead-modal.component';
 import { cursosEadModel } from 'src/app/models/ead.model';
 import { EadCursosMock } from 'src/app/cursos-ead';
-import { PreInscricaoModalComponent } from '../pre-inscricao-modal/pre-inscricao-modal.component';
 
 @Component({
   selector: 'app-ead',

@@ -3,7 +3,6 @@ import { AtualizacaoCursosMock } from 'src/app/cursos-atualizacao';
 import { BsModalService } from 'ngx-bootstrap';
 import { AtualizacaoModalComponent } from './atualizacao-modal/atualizacao-modal.component';
 import { AtualizacaoModels } from 'src/app/models/atualizacao.model';
-import { PreInscricaoModalComponent } from '../pre-inscricao-modal/pre-inscricao-modal.component';
 
 @Component({
   selector: 'app-atualizacao',
