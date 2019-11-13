@@ -48,7 +48,7 @@
             <hr>
             <p class="card-text"><b>Duração do curso: </b>{{cursosPresencial.duracao}}</p>
             <p class="card-text"><b>Modalidade: </b>{{cursosPresencial.modalidade}}</p>
-            <p class="card-text"><b>Dias de aula: </b>{{cursosPresencial.diasAula}}</p>
+            <p class="card-text"><b>Periodicidade: </b>{{cursosPresencial.diasAula}}</p>
             <p class="card-text"><b>Horário: </b>{{cursosPresencial.horario}}</p>
             <p class="card-text"><b>Frequência: </b>{{cursosPresencial.frequencia}}</p>
             <p class="card-text"><b>Unidade: </b>{{cursosPresencial.unidade}}</p>
@@ -58,7 +58,7 @@
             <hr>
             <div class="botoes d-flex justify-content-between">
                 <button type="button" class="btn btn-primary" (click)="ExibirInfoCurso(cursosPresencial)">Sobre o curso</button>
-                <button type="button" class="btn btn-primary">Pré-inscrição</button>
+                <button type="button" class="btn btn-primary" (click)="ExibirPreInscricao(cursosPresencial)">Pré-inscrição</button>
             </div>
         </div>
     </div>

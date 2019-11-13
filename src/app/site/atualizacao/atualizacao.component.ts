@@ -3,6 +3,7 @@ import { AtualizacaoCursosMock } from 'src/app/cursos-atualizacao';
 import { BsModalService } from 'ngx-bootstrap';
 import { AtualizacaoModalComponent } from './atualizacao-modal/atualizacao-modal.component';
 import { AtualizacaoModels } from 'src/app/models/atualizacao.model';
+import { PreInscricaoModalComponent } from '../pre-inscricao-modal/pre-inscricao-modal.component';
 
 @Component({
   selector: 'app-atualizacao',
@@ -39,6 +40,17 @@ export class AtualizacaoComponent implements OnInit {
           data
         }
       });
+  }
+
+  ExibirPreInscricao(info: any): void {
+    const data = info
+    this.modalService.show(PreInscricaoModalComponent, {
+      class: 'modal-lg',
+      initialState: {
+        tituloModal: "Informações sobre o curso",
+        data
+      }
+    });
   }
 
   trocarFiltro(campoFiltro) {
