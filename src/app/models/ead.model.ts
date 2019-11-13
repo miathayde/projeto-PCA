@@ -6,6 +6,7 @@ export class cursosEadModel {
     cargaHoraria: string;
     titulo: string;
     imagem: string;
+    area: string;
     publicoAlvo: string;
     competencias: string;
     diferencial: string;

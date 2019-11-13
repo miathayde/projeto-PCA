@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { cursosEad } from 'src/app/cursos-ead';
 import { BsModalService } from 'ngx-bootstrap';
 import { EadModalComponent } from './ead-modal/ead-modal.component';
+import { cursosEadModel } from 'src/app/models/ead.model';
+import { EadCursosMock } from 'src/app/cursos-ead';
 
 @Component({
   selector: 'app-ead',
@@ -9,23 +10,59 @@ import { EadModalComponent } from './ead-modal/ead-modal.component';
   styleUrls: ['./ead.component.scss']
 })
 export class EadComponent implements OnInit {
-  eadCursos: Array <any> = new cursosEad().data;
   info: any = null;
+
+  eadCursos: Array <cursosEadModel> = EadCursosMock;
+  eadCursosExibidas: Array <cursosEadModel>;
+  filtros = {
+    'gestao': false,
+    'mba': false,
+  }
 
   constructor(
     private modalService: BsModalService
   ) { }
 
   ngOnInit() {
+    this.clonarArray();
   }
 
   ExibirInfoCurso(info: any): void {
+    const data = info
     this.modalService.show(EadModalComponent, {
       class: 'modal-lg',
       initialState: {
-        tituloModal: "Informações sobre o curso"
+        tituloModal: "Informações sobre o curso",
+        data
       }
     });
+}
+
+trocarFiltro(campoFiltro) {
+  this.filtros[campoFiltro] = !this.filtros[campoFiltro];
+  this.filtrarPorArea();
+}
+
+removerFiltro(campoFiltro) {
+  this.filtros["gestao"] = false;
+  this.filtros["mba"] = false;
+  this.clonarArray()
+}
+
+clonarArray() {
+  this.eadCursosExibidas = Object.assign(this.eadCursos, []);
+}
+
+filtrarPorArea() {
+  this.eadCursosExibidas = this.eadCursos.filter(v =>{
+    if (this.filtros["gestao"] && v.area === 'gestao') {
+      return true;
+    }
+    if (this.filtros["mba"] && v.area === 'mba') {
+      return true;
+    }
+    return false;
+  });
 }
 
 }

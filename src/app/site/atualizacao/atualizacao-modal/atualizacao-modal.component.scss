@@ -1,11 +1,16 @@
+.modal-header {
+    background: rgb(13, 80, 153);
+}
+
 .modal-title {
-    color: rgb(13, 53, 114);
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .modal-body {
     text-align: justify;
 
     b {
-        color: rgb(66, 71, 78);
+        color: rgb(13, 53, 114);
     }
 }

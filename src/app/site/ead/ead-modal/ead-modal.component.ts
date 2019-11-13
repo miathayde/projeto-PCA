@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BsModalRef } from 'ngx-bootstrap';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
+import { cursosEadModel } from 'src/app/models/ead.model';
 
 @Component({
   selector: 'app-ead-modal',
@@ -7,12 +8,17 @@ import { BsModalRef } from 'ngx-bootstrap';
   styleUrls: ['./ead-modal.component.scss']
 })
 export class EadModalComponent implements OnInit {
+  tituloModal;
+  informacoesSobreOCurso: cursosEadModel;
 
   constructor(
-    private modalRef: BsModalRef
+    private modalRef: BsModalRef,
+    private modalService: BsModalService,
   ) { }
 
   ngOnInit() {
+    this.tituloModal = this.modalService.config.initialState['tituloModal'];
+    this.informacoesSobreOCurso = this.modalService.config.initialState['data'];
   }
 
   fechar(): void {

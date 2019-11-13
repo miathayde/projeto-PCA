@@ -1,5 +1,6 @@
-export class cursosEad {
-    data: Array<any> = [
+import { cursosEadModel } from './models/ead.model';
+
+    export const EadCursosMock: Array <cursosEadModel> = [
         {
         "nomeCurso":"Aperfeiçoamento em Gestão de Finanças",
         "duracao":"6 meses",
@@ -8,6 +9,7 @@ export class cursosEad {
         "cargaHoraria": "180 horas",
         "titulo": "Aperfeiçoamento",
         "imagem": "http://unigranrio.com.br/_hotsite/_img/adm.jpg",
+        "area": "gestao",
         "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de recursos financeiros como fonte de vantagens competitivas.",
         "competencias": "Ao final do curso, o participante estará apto a desenvolver políticas de gestão financeira que atendam às especificidades do mercado.",
         "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -24,6 +26,7 @@ export class cursosEad {
             "cargaHoraria": "180 horas",
             "titulo": "Aperfeiçoamento",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/marketing.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing como fonte de vantagens competitivas.",
             "competencias": "Ao final do curso, o participante estará apto a compreender o mercado, planejar o composto de marketing e a desenvolver e implementar estratégias mercadológicas, de forma a potencializar os recursos organizacionais, conforme previsto no plano de marketing.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -40,6 +43,7 @@ export class cursosEad {
             "cargaHoraria": "180 horas",
             "titulo": "Aperfeiçoamento",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/rh.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de capital humano como fonte de vantagens competitivas.",
             "competencias": "O participante estará apto a compreender o impacto da correta gestão de recursos humanos no que tange a liderança, proatividade e comprometimento no sucesso da empresa.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -56,6 +60,7 @@ export class cursosEad {
             "cargaHoraria": "360 horas",
             "titulo": "Especialização",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/marketing.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing e de finanças como fonte de vantagens competitivas.",
             "competencias": "Ao final do curso o participante estará apto a compreender o mercado, planejar o composto de marketing, implantar estratégias mercadológicas, bem como entender o impacto da gestão financeira das atividades realizadas, a forma de analisar os resultados e compreender a saúde financeira da organização.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -72,6 +77,7 @@ export class cursosEad {
             "cargaHoraria": "360 horas",
             "titulo": "Especialização",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/logistica.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing e de logística como fonte de vantagens competitivas.",
             "competencias": "Ao final do curso o participante estará apto a compreender o mercado, planejar o composto de marketing, desenvolver e implementar estratégias mercadológicas, sendo capaz de disponibilizar adequadamente bens e serviços conforme previsto no plano de marketing.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -88,6 +94,7 @@ export class cursosEad {
             "cargaHoraria": "360 horas",
             "titulo": "Especialização",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/gestao_financeira.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de gestão de pessoas e finanças como fontes de vantagens competitivas.",
             "competencias": "Ao final de curso o participante estará apto a entender a importância das práticas de recursos humanos no sucesso da organização e a sua influência nos resultados financeiros de avaliação de investimentos, retornos financeiros, fluxos de caixa e de análise de recursos utilizados pelas equipes.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -104,6 +111,7 @@ export class cursosEad {
             "cargaHoraria": "360 horas",
             "titulo": "Especialização",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/rh.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de gestão de pessoas e logística como fontes de vantagens competitivas.",
             "competencias": "Ao final do curso o participante estará apto a entender a importância das práticas de recursos humanos no sucesso da organização e a sua influência nos resultados operacionais e logísticos, promovendo a integração entre setores, processos e pessoas, motivando e empoderando as equipes na busca de resultados.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -120,6 +128,7 @@ export class cursosEad {
             "cargaHoraria": "360 horas",
             "titulo": "Especialização",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/rh.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing e de pessoas como fonte de vantagens competitivas.",
             "competencias": "Ao final do curso, o participante estará apto a compreender o mercado, planejar o composto de marketing, implantar estratégias mercadológicas e entender o impacto da correta gestão de recursos humanos no que tange a liderança, proatividade e comprometimento, na aplicação das ferramentas de marketing e no sucesso da empresa.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -136,6 +145,7 @@ export class cursosEad {
             "cargaHoraria": "360 horas",
             "titulo": "Especialização",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/gestao_financeira.jpg",
+            "area": "gestao",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de gestão de logística e finanças como fontes de vantagens competitivas.",
             "competencias": "Ao final de curso, o participante estará apto a entender a importância das práticas das atividades logísticas de planejamento de compras, produção, movimentação, entregas e logística reversa, bem como a sua influência nos resultados financeiros de avaliação de investimentos, retornos financeiros, fluxos de caixa e de análise de recursos utilizados pelas equipes.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -152,6 +162,7 @@ export class cursosEad {
             "cargaHoraria": "720 horas",
             "titulo": "MBA",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/adm.jpg",
+            "area": "mba",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing, pessoas, logística e finanças como fonte de vantagens competitivas.",
             "competencias": "Ao final do curso, o aluno estará apto a entender e aplicar os modelos de gestão das empresas considerando, de forma ampla e abrangente, desde a análise e posicionamento de mercado, sua forma de atendimento ao consumidor, seu processo de produção e movimentação de produtos e serviços, sua gestão de recursos financeiros e apuração de resultados, bem como o processo de envolvimento das pessoas na gestão dos recursos e na motivação para a busca de resultados.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -168,6 +179,7 @@ export class cursosEad {
             "cargaHoraria": "540 horas",
             "titulo": "MBA",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/marketing.jpg",
+            "area": "mba",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing, pessoas, logística e finanças como fonte de vantagens competitivas. Escolhendo três das quatro áreas de conhecimento.",
             "competencias": "Ao final do curso, o aluno estará apto a entender e aplicar os modelos de gestão das empresas considerando desde a análise e posicionamento de mercado, sua forma de atendimento ao consumidor, seu processo de produção e movimentação de produtos e serviços, sua gestão de recursos financeiros e apuração de resultados, bem como o processo de envolvimento das pessoas na gestão dos recursos e na motivação para a busca de resultados.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -184,6 +196,7 @@ export class cursosEad {
             "cargaHoraria": "540 horas",
             "titulo": "MBA",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/gestao_financeira.jpg",
+            "area": "mba",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing, pessoas, logística e finanças como fonte de vantagens competitivas. Escolhendo três das quatro áreas de conhecimento.",
             "competencias": "Ao final do curso, o aluno estará apto a entender e aplicar os modelos de gestão das empresas considerando desde a análise e posicionamento de mercado, sua forma de atendimento ao consumidor, seu processo de produção e movimentação de produtos e serviços, sua gestão de recursos financeiros e apuração de resultados, bem como o processo de envolvimento das pessoas na gestão dos recursos e na motivação para a busca de resultados.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -200,6 +213,7 @@ export class cursosEad {
             "cargaHoraria": "540 horas",
             "titulo": "MBA",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/adm.jpg",
+            "area": "mba",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing, pessoas, logística e finanças como fonte de vantagens competitivas. Escolhendo três das quatro áreas de conhecimento.",
             "competencias": "Ao final do curso, o aluno estará apto a entender e aplicar os modelos de gestão das empresas considerando desde a análise e posicionamento de mercado, sua forma de atendimento ao consumidor, seu processo de produção e movimentação de produtos e serviços, sua gestão de recursos financeiros e apuração de resultados, bem como o processo de envolvimento das pessoas na gestão dos recursos e na motivação para a busca de resultados.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -216,6 +230,7 @@ export class cursosEad {
             "cargaHoraria": "540 horas",
             "titulo": "MBA",
             "imagem": "http://unigranrio.com.br/_hotsite/_img/rh.jpg",
+            "area": "mba",
             "publicoAlvo": "Profissionais com experiência e formação acadêmica, que atuam nas organizações e que estejam buscando evolução por meio do aprimoramento conceitual e da prática dos processos de marketing, pessoas, logística e finanças como fonte de vantagens competitivas. Escolhendo três das quatro áreas de conhecimento.",
             "competencias": "Ao final do curso, o aluno estará apto a entender e aplicar os modelos de gestão das empresas considerando desde a análise e posicionamento de mercado, sua forma de atendimento ao consumidor, seu processo de produção e movimentação de produtos e serviços, sua gestão de recursos financeiros e apuração de resultados, bem como o processo de envolvimento das pessoas na gestão dos recursos e na motivação para a busca de resultados.",
             "diferencial": "Mercado de trabalho: aprendizagem fundamentada em conceitos aplicáveis à sua realidade (profissional e social), consolidando seus conhecimentos e, ao mesmo tempo, melhorando sua competitividade. Conteúdos e atividades: elaborados e organizados por professores mestres e doutores na área do curso e momentos síncronos (webconferências) com profissionais especialistas nos temas atuais e tendências do mercado. Mediação: será realizado por especialistas, mestres ou doutores na área. Facilidade e comodidade: o aluno não precisa sair de casa para fazer a matrícula, entregar documentos e nem realizar a avaliação presencial. Biblioteca: acervo digital com mais de 20 mil livros. Acompanhamento dos alunos: equipe dedicada na sede para acompanhar o processo de estudo dos alunos.",
@@ -226,4 +241,3 @@ export class cursosEad {
         },
     
     ];
-}
