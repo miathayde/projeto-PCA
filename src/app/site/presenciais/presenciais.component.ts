@@ -3,6 +3,7 @@ import { BsModalService } from 'ngx-bootstrap';
 import { PresenciaisModalComponent } from './presenciais-modal/presenciais-modal.component';
 import { cursosPresencialModel } from 'src/app/models/presencial.model';
 import { PresencialCursosMock } from 'src/app/cursos-presencial';
+import { PresencialInscricaoModalComponent } from './presencial-inscricao-modal/presencial-inscricao-modal.component';
 
 @Component({
   selector: 'app-presenciais',
@@ -43,7 +44,7 @@ export class PresenciaisComponent implements OnInit {
 
 ExibirPreInscricao(info: any): void {
   const data = info
-  this.modalService.show(PreInscricaoModalComponent, {
+  this.modalService.show(PresencialInscricaoModalComponent, {
     class: 'modal-lg',
     initialState: {
       tituloModal: "Informações sobre o curso",

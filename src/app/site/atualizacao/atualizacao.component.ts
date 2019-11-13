@@ -41,16 +41,6 @@ export class AtualizacaoComponent implements OnInit {
       });
   }
 
-  ExibirPreInscricao(info: any): void {
-    const data = info
-    this.modalService.show(PreInscricaoModalComponent, {
-      class: 'modal-lg',
-      initialState: {
-        tituloModal: "Informações sobre o curso",
-        data
-      }
-    });
-  }
 
   trocarFiltro(campoFiltro) {
     this.filtros[campoFiltro] = !this.filtros[campoFiltro];
