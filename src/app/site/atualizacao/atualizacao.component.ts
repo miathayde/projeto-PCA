@@ -45,7 +45,9 @@ export class AtualizacaoComponent implements OnInit {
   ExibirPreInscricao(info: any): void {
     const data = info
     this.modalService.show(InscricaoAtualizacaoModalComponent, {
-      class: 'modal-lg',
+      backdrop: false,
+      ignoreBackdropClick: true,      
+      class: 'modal-lg-1',
       initialState: {
         tituloModal: "Informações sobre o curso",
         data

@@ -25,4 +25,5 @@ export class AtualizacaoModalComponent implements OnInit {
   fechar(): void {
     this.modalRef.hide();
   }
+
 }

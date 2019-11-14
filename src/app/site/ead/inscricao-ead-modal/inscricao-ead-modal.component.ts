@@ -10,6 +10,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap';
 export class InscricaoEadModalComponent implements OnInit {
   tituloModal;
   preInscricao: cursosEadModel;
+  botaoSelecionado: boolean = false;
 
   constructor(
     private modalService: BsModalService,
