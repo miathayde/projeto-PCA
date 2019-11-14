@@ -3,6 +3,7 @@ import { BsModalService } from 'ngx-bootstrap';
 import { EadModalComponent } from './ead-modal/ead-modal.component';
 import { cursosEadModel } from 'src/app/models/ead.model';
 import { EadCursosMock } from 'src/app/cursos-ead';
+import { InscricaoEadModalComponent } from './inscricao-ead-modal/inscricao-ead-modal.component';
 
 @Component({
   selector: 'app-ead',
@@ -38,6 +39,16 @@ export class EadComponent implements OnInit {
     });
 }
 
+ExibirPreInscricao(info: any): void {
+  const data = info
+  this.modalService.show(InscricaoEadModalComponent, {
+    class: 'modal-lg',
+    initialState: {
+      tituloModal: "Informações sobre o curso",
+      data
+    }
+  });
+}
 
 trocarFiltro(campoFiltro) {
   this.filtros[campoFiltro] = !this.filtros[campoFiltro];

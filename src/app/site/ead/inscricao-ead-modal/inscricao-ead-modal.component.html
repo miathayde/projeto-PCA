@@ -1,0 +1,89 @@
+<div class="modal-presencial">
+    <div class="modal-header">
+        <h4 class="modal-title">{{preInscricao.nomeCurso}}</h4>
+        <button type="button" class="close pull-right" aria-label="Fechar" (click)="fechar()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <label for="nome">Nome completo</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="telefone">CPF</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Ex: 000-000-000-00" required>
+            </div>
+            <div class="col-lg-6">
+                <label for="telefone">Data de nascimento</label>
+                <input type="text" class="form-control" id="telefone" placeholder="dd/mm/aaaa" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" id="telefone" placeholder="(**) ****-****" required>
+            </div>
+            <div class="col-lg-6">
+                <label for="celular">Celular</label>
+                <input type="text" class="form-control" id="celular" placeholder="(**) *****-****" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-12">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="termo-acordo">
+            <h5 style="color:rgb(70, 116, 134)">Termo de acordo</h5>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-info" role="alert" style="text-align: justify;">
+                        <p class="mb-1">• A UNIGRANRIO se reserva o direito de prorrogar ou cancelar o início do Curso,
+                            caso o número mínimo de candidatos para formar turma não seja atingido.</p>
+                        <p class="mb-1">• O quadro docente e de coordenadores pode ser alterado conforme necessidade da
+                            Instituição ou indisponibilidade dos professores.</p>
+                        <p class="mb-1">• A inscrição somente será confirmada após o pagamento do boleto. O não
+                            pagamento do boleto no prazo estabelecido, cancela, automaticamente, a inscrição.</p>
+                        <p class="mb-1">• O processo de seleção dos candidatos será determinado pela coordenação de cada
+                            curso.</p>
+                        <p class="mb-1">• Para efetivar a inscrição e a participação no curso, o candidato deverá
+                            apresentar as documentações solicitadas no final da inscrição.</p>
+                        <p class="mb-1">• O período previsto para a integralização das horas do curso pode ser alterado
+                            em virtude de situações contingenciais.</p>
+                        <p class="mb-1">• O curso terá a duração prevista no conteúdo programático, mas poderá sofrer
+                            alterações em casos excepcionais.</p>
+                        <p class="mb-1">• Não havendo a confirmação do curso, o valor pago será devolvido integralmente,
+                            nos prazos previstos pela Instituição.</p>
+                        <p class="mb-1">• Se a turma for confirmada e o contratante solicitar o cancelamento de sua
+                            matricula no prazo máximo de 48 horas antes do início do curso, fará jus a restituição de
+                            80% (oitenta por cento), após o prazo de 48 horas não haverá devolução.</p>
+                        <p class="mb-1">• A frequência mínima exigida para obtenção do certificado é de 75%.</p>
+                        <p class="mb-1">• Ao dar o aceito deste instrumento, o aluno confirma que tem conhecimento e
+                            concorda com as condições expostas acima. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Li e concordo com o termo de acordo.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="fechar()">Inscrever-me</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="fechar()">Cancelar</button>
+    </div>
+</div>
