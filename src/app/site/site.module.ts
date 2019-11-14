@@ -10,7 +10,6 @@ import { PresenciaisComponent } from './presenciais/presenciais.component';
 import { EadComponent } from './ead/ead.component';
 import { AtualizacaoComponent } from './atualizacao/atualizacao.component';
 import { AtualizacaoModalComponent } from './atualizacao/atualizacao-modal/atualizacao-modal.component';
-import { SobreComponent } from './sobre/sobre.component';
 import { EadModalComponent } from './ead/ead-modal/ead-modal.component';
 import { PresenciaisModalComponent } from './presenciais/presenciais-modal/presenciais-modal.component';
 import { PresencialInscricaoModalComponent } from './presenciais/presencial-inscricao-modal/presencial-inscricao-modal.component';
@@ -29,8 +28,6 @@ import { InscricaoAtualizacaoModalComponent } from './atualizacao/inscricao-atua
     AtualizacaoComponent,
 
     AtualizacaoModalComponent,
-
-    SobreComponent,
 
     EadModalComponent,
 
