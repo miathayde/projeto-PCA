@@ -4,17 +4,17 @@
     <h5>Pesquisar por:</h5>
     <div class="btns">
         <button type="button" (click)="trocarFiltro('gestao')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['gestao'] ? 'btn-primary' : 'btn-outline-primary'">
             Gestão
         </button>
         <button type="button" (click)="trocarFiltro('mba')" 
-            class="btn btn-outline-primary ml-3"
+            class="btn btn-outline-primary ml-3 mb-1"
             [ngClass]="filtros['mba'] ? 'btn-primary' : 'btn-outline-primary'">
             MBA
         </button>
         <button type="button" (click)="removerFiltro()" 
-            class="btn btn-outline-secondary ml-3">
+            class="btn btn-outline-secondary ml-3 mb-1">
             Remover Filtro
         </button>
     </div>

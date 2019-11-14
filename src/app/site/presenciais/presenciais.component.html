@@ -4,37 +4,37 @@
     <h5>Pesquisar por:</h5>
     <div class="btns">
         <button type="button" (click)="trocarFiltro('gestao')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['gestao'] ? 'btn-primary' : 'btn-outline-primary'"
             >
             Gestão
         </button>
         <button type="button" (click)="trocarFiltro('direito')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['direito'] ? 'btn-primary' : 'btn-outline-primary'"
             >
             Direito
         </button>
         <button type="button" (click)="trocarFiltro('educacao')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['educacao'] ? 'btn-primary' : 'btn-outline-primary'"
             >
             Educação
         </button>
         <button type="button" (click)="trocarFiltro('moda')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['moda'] ? 'btn-primary' : 'btn-outline-primary'"
             >
             Moda
         </button>
         <button type="button" (click)="trocarFiltro('saude')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['saude'] ? 'btn-primary' : 'btn-outline-primary'"
             >
             Saúde
         </button>
         <button type="button" (click)="removerFiltro()" 
-            class="btn btn-outline-secondary ml-3">Remover 
+            class="btn btn-outline-secondary ml-3 mb-1">Remover 
             Filtro
         </button>
     </div>

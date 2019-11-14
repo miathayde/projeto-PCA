@@ -4,27 +4,27 @@
     <h5>Pesquisar por:</h5>
     <div class="btns mb-3">
         <button type="button" (click)="trocarFiltro('educacao e humanas')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['educacao e humanas'] ? 'btn-primary' : 'btn-outline-primary'">
             Educação e humanas
         </button>
         <button type="button" (click)="trocarFiltro('saude')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['saude'] ? 'btn-primary' : 'btn-outline-primary'">
             Saúde
         </button>
         <button type="button" (click)="trocarFiltro('tecnologia')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['tecnologia'] ? 'btn-primary' : 'btn-outline-primary'">
             Tecnologia
         </button>
         <button type="button" (click)="trocarFiltro('sociais e aplicadas')" 
-            class="btn ml-3"
+            class="btn ml-3 mb-1"
             [ngClass]="filtros['sociais e aplicadas'] ? 'btn-primary' : 'btn-outline-primary'">
             Sociais e aplicadas
         </button>
         <button type="button" (click)="removerFiltro()" 
-            class="btn btn-outline-secondary ml-3">
+            class="btn btn-outline-secondary ml-3 mb-1">
             Remover Filtro
         </button>
     </div>
