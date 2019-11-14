@@ -72,3 +72,57 @@ modal-container .modal-lg-1 {
         }
     }
 }
+
+.tab-abas {
+
+    .tab-content {
+        background-color: #FFF;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        border-right: 1px solid #CCC;
+        padding: 20px;
+
+    }
+    .nav-tabs {
+        margin-top:3px;
+        li a {
+            // border-radius: 0;
+
+            border-radius: 0;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            border-right: 1px solid #dee2e6 !important;
+            border-left: 1px solid #dee2e6 !important;
+            color: gray;
+        }
+        li.active a {
+            border-top: 4px solid #98c0ea;
+            padding-top: 7px;
+            color: #fbfbfb;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+        }
+        .nav-link {
+            border: 1px solid transparent;
+            border-top: 4px solid #e2e2e2;
+            background-color: #FFF;
+            .error {
+                color: #ff0000 !important;
+            }
+
+        }
+
+        .nav-link.active {
+            background-color: #09498e !important;
+        }
+        .nav-link.active .error {
+            color: white !important;
+        }
+
+
+        .nav-item {
+            margin-bottom: 0px;
+
+        }
+    }
+}

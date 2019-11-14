@@ -6,13 +6,45 @@
         </button>
     </div>
     <div class="modal-body">
-        <p><b>Horário: </b>{{informacoesSobreOCurso.horario}}</p>
-        <p><b>Periodicidade: </b>{{informacoesSobreOCurso.periodicidade}}</p>
-        <p><b>Carga Horária: </b>{{informacoesSobreOCurso.cargaHoraria}}</p>
-        <p><b>Unidade: </b>{{informacoesSobreOCurso.unidade}}</p>
-        <hr>
-        <p><b>Público-alvo: </b>{{informacoesSobreOCurso.publicoAlvo}}</p>
-        <p><b>Benefícios: </b>{{informacoesSobreOCurso.beneficios}}</p>
+
+        <tabset class="tab-abas">
+            <tab id="tab-dados-curso">
+                <ng-template tabHeading>
+                    <span>Sobre o curso</span>
+                </ng-template>
+
+                <p><b>Horário: </b>{{informacoesSobreOCurso.horario}}</p>
+                <p><b>Periodicidade: </b>{{informacoesSobreOCurso.periodicidade}}</p>
+                <p><b>Carga Horária: </b>{{informacoesSobreOCurso.cargaHoraria}}</p>
+                <p><b>Unidade: </b>{{informacoesSobreOCurso.unidade}}</p>
+                <hr>
+                <p><b>Público-alvo: </b>{{informacoesSobreOCurso.publicoAlvo}}</p>
+                <p><b>Benefícios: </b>{{informacoesSobreOCurso.beneficios}}</p>
+            </tab>
+
+            <tab id="tab-ementa">
+                <ng-template tabHeading>
+                    <span>Ementa</span>
+                </ng-template>
+
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa1}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa2}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa3}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa4}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa5}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa6}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa7}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa8}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa9}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa10}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa11}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa12}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa13}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa14}}</b></p>
+                <p class="mb-4"><b>{{informacoesSobreOCurso.ementa15}}</b></p>
+            </tab>
+        </tabset>
+        
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="fechar()">Fechar</button>
