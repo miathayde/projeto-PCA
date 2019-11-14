@@ -31,7 +31,9 @@ export class EadComponent implements OnInit {
   ExibirInfoCurso(info: any): void {
     const data = info
     this.modalService.show(EadModalComponent, {
-      class: 'modal-lg',
+      backdrop: false,
+      ignoreBackdropClick: true,
+      class: 'modal-lg-1',
       initialState: {
         tituloModal: "Informações sobre o curso",
         data
@@ -42,7 +44,9 @@ export class EadComponent implements OnInit {
 ExibirPreInscricao(info: any): void {
   const data = info
   this.modalService.show(InscricaoEadModalComponent, {
-    class: 'modal-lg',
+    backdrop: false,
+    ignoreBackdropClick: true,
+    class: 'modal-lg-1',
     initialState: {
       tituloModal: "Informações sobre o curso",
       data

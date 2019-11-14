@@ -11,6 +11,7 @@ export class InscricaoAtualizacaoModalComponent implements OnInit {
   tituloModal;
   preInscricao: AtualizacaoModels;
   botaoSelecionado: boolean = false;
+  
   constructor(
     private modalService: BsModalService,
     private modalRef: BsModalRef

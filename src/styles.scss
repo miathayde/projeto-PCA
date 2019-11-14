@@ -30,3 +30,45 @@
     margin-left: -10px;
     margin-right: -10px;
 }
+
+modal-container .modal-lg-1 {
+    width: 50%;
+    max-width: inherit;
+
+    .modal-body {
+        max-height: 80vh;
+        overflow-y: scroll;
+    }
+    .modal-body.overflow-hidden {
+        max-height: inherit;
+        overflow-y: visible;
+    }
+    .modal-body.overflow-hidden.no-padding {
+        max-height: inherit;
+        overflow-y: visible;
+        padding: 1px !important;   
+       
+    }
+    .modal-overflow-visible .modal-body {
+        overflow: visible !important;
+    }
+}
+
+.modal-pos {
+    .modal-header {
+        background: rgb(28, 98, 173);
+    }
+    
+    .modal-title {
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .modal-body {
+        text-align: justify;
+    
+        b {
+            color: rgb(13, 53, 114);
+        }
+    }
+}
