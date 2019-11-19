@@ -59,7 +59,7 @@ trocarFiltro(campoFiltro) {
   this.filtrarPorArea();
 }
 
-removerFiltro(campoFiltro) {
+removerFiltro() {
   this.filtros["gestao"] = false;
   this.filtros["mba"] = false;
   this.clonarArray()
